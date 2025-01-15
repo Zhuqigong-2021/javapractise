@@ -1,6 +1,6 @@
 package trycatch;
 
-public class Exception {
+public class Exception1 {
 //    异常机制
 //    try{
 //        open the file;
