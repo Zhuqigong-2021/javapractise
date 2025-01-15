@@ -1,8 +1,6 @@
 package trycatch;
 
-import java.util.Scanner;
-
-public class ArrayIndex {
+public class CatchMechanism {
     public static void f(){
         int[] a = new int[10];
         a[10]=10;
@@ -22,7 +20,7 @@ public class ArrayIndex {
     public static void k(){
         try {
             h();
-           }
+        }
         catch(NullPointerException e){
             System.out.println("k()");
         }
@@ -30,7 +28,7 @@ public class ArrayIndex {
     public static void main(String[] args) {
 
         try {
-           k();
+            k();
 
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Caught");
