@@ -1,5 +1,8 @@
 package innerClass;
 
+/**
+ * 内部类的基本样子
+ */
 public class InnerClass01 {
     public static void main(String[] args) {
 

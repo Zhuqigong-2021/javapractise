@@ -17,16 +17,17 @@ public class InheritanceException {
 }
 
 class NewClass extends InheritanceException{
-    public NewClass() throws OpenException2,NewException {
+    public NewClass() throws OpenException2,NewException{
     }
 
     public void f() throws OpenException2{}
 
     public static void main(String[] args) {
-            InheritanceException p = new NewClass();
+
         try {
+            InheritanceException p = new NewClass();
             p.f();
-        } catch (OpenException2 e) {
+        } catch (OpenException2 | NewException e) {
             e.printStackTrace();
         }
     }
